@@ -1,0 +1,55 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background: url('kawaii.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    color: #ff69b4;
+}
+
+h1 {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    font-size: 3em;
+    margin: 20px 0;
+}
+
+#board {
+    display: grid;
+    grid-template-columns: repeat(8, 60px);
+    grid-template-rows: repeat(8, 60px);
+    gap: 2px;
+}
+
+.square {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    cursor: pointer;
+}
+
+.square.light {
+    background-color: #ffb6c1;
+}
+
+.square.dark {
+    background-color: #ff69b4;
+}
+
+.piece {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.piece.white {
+    background-color: #f762cd;
+}
+
+.piece.black {
+    background-color: #62d878;
+}
